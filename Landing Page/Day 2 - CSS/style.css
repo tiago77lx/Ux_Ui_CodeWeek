@@ -1,0 +1,171 @@
+/* Reset & variables */
+
+:root {
+  --dark-color: #282e34;
+  --light-color: #f4f4f4;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--light-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header  */
+
+header {
+  color: #edf0f1;
+}
+
+nav {
+  background-color: var(--dark-color);
+  width: 100%;
+}
+
+nav * {
+  display: inline-block;
+  color: #edf0f1;
+}
+
+.logo {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* .nav-list {
+  margin-right: 20px;
+} */
+
+.nav-list a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 400px;
+  background-image: url('./imgs/img4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.jumbo-text {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  background-color: var(--dark-color);
+  opacity: 0.9;
+}
+
+.jumbotron button {
+  position: relative;
+  top: 300px;
+  cursor: pointer;
+
+  background-color: #0069d9;
+  color: #ddd;
+  border: 2px solid #0069d9;
+  border-radius: 20px;
+
+  width: 200px;
+  height: 50px;
+}
+
+/* Features */
+
+#features {
+  background-color: var(--light-color);
+  color: #666;
+}
+
+#features div {
+  margin: 50px 10% 0 10%;
+  text-align: center;
+}
+
+#features img {
+  max-width: 40%;
+}
+
+/* Price */
+
+#price {
+  background-color: var(--dark-color);
+  color: #ddd;
+}
+
+.card {
+  margin: 0 auto;
+  width: 300px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.card ul {
+  margin: 30px 0;
+  text-align: left;
+  list-style: square;
+}
+
+hr {
+  max-width: 50%;
+}
+
+/* About */
+
+#about {
+  background-color: var(--light-color);
+  color: #666;
+  margin: 50px 10%;
+}
+
+form {
+  width: 50%;
+}
+
+.form-email {
+  width: 70%;
+  height: 28px;
+}
+
+.form-input {
+  cursor: pointer;
+  background-color: #0069d9;
+  color: #ddd;
+  border: 2px solid #0069d9;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--dark-color);
+  color: #666;
+  height: 100px;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+}

@@ -1,0 +1,164 @@
+/*  -----CSS Notes----- */
+
+/* ---Style Reset--- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #ff7557; /* Variable declaration : use two dashes before (--main) */
+}
+
+.variable {
+  width: 200px;
+  height: 200px;
+  background-color: var(
+    --main-color
+  ); /* Variable use: var keyword followed by parenthesis and variable name  */
+}
+
+/* Best Practices
+ - Use them for values that are repeated troughout the page
+ - Declare them on the :root
+ - Use meaningful names
+
+
+*/
+
+/*  --- Selectors --- */
+
+/* Type Selector */
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: blue;
+}
+
+/* Class selector */
+/* (remember the dot before the name) */
+
+.inverted {
+  background-color: black;
+  color: white;
+}
+
+.italics {
+  font-style: italic;
+}
+
+/* ID selector */
+
+#larger-text {
+  font-size: 3em;
+}
+
+/* Universal Selector - targets every element on the page */
+
+* {
+  margin: 0;
+}
+
+.box-model {
+  background-color: palevioletred;
+  width: 200px;
+  height: 200px;
+
+  /* border-width, border-style, border-color */
+  /* shorthand */
+  border: 2px solid black;
+
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: black; */
+
+  /* border-bottom: 2px solid black; --- targeting a single border*/
+
+  /* border-radius: 30px; */
+  /* border-top-right-radius: 30px;  --- targeting a single corner*/
+
+  /* applies to all sides */
+  padding: 10px;
+
+  /* each side specifically - top, right, bottom, left (clockwise)*/
+  padding: 10px 10px 10px 10px;
+
+  /* vertical (top and bottom) and horizontal (left and right) */
+  padding: 20px 10px;
+
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+#circle {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+/* ---Font--- */
+
+body {
+  /* Changing the font (font-family) */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.oblique {
+  font-style: oblique;
+}
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+  line-height: 3em;
+}
+
+.wavy-red {
+  /* type of decoration (underline) - style (wavy) - color (red) */
+  text-decoration: underline wavy red;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.line-height {
+  line-height: 3;
+}
+
+/* ---Color--- */
+
+/* Name */
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-red {
+  /*  background-color: #ff0000; --- Hexadecimal*/
+  /* background-color: rgb(250, 0, 0); --- RGB */
+  background-color: rgba(255, 0, 0, 0.9); /* --- rgba */
+}
